@@ -13,10 +13,85 @@ body{
   font-size: small;
 }
 
+.mainView{
+  display: flex;
+  flex-direction: column;
+  gap: 3vw;
+  font-family: 'RobotoMono';
+  text-align: center;
+
+  h1{
+    font-size: xxx-large;
+    font-weight: 600;
+    text-align: center;
+  }
+
+}
+
+
 header{
   display:flex;
+  flex-direction: column;
   font-family: 'RobotoMono';
-  justify-content: center;
+  justify-content: space-around;
   font-size: xx-large;
-  gap: 100px;
+  gap: 16px;
+  padding: 16px;
+}
+
+@media (min-width:1244px) {
+  header{
+    flex-direction: row;
+    padding-left: 4vw;
+    
+  }
+}
+
+@media (max-width: 1244px){
+  .spacer-1 {
+    font-family: 'RobotoMono' monospace;
+    font-size:  clamp(9px, 0.6vw, 12px);
+    line-height: 1;
+    white-space: pre;
+    overflow: hidden;
+    max-width: 100%;
+  }
+
+}
+
+
+
+.spacer-1{
+  display: flex;
+  flex:1;
+  justify-content: center;
+  border: 2px red;
+}
+
+.spacer-2{
+  display: flex;
+  flex:2;
+  justify-content: center;
+  border: 2px solid red;
+}
+
+.spacer-2-nonaligned{
+  display: flex;
+  flex:2;
+}
+
+.container-horizontal{
+  display: flex;
+}
+
+.container-vertical{
+  display: flex;
+  flex-direction: column; 
+  justify-content: center;
+  align-items: center;
+  width:100%;
+}
+
+#namespaceUL{
+  width:75%;
 }
