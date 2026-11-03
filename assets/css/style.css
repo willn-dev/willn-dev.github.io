@@ -78,7 +78,7 @@ header{
   .container-horizontal{
     display: flex;
     justify-content: center;
-    gap:6vw;
+    gap:3vw;
   }
 
 }
