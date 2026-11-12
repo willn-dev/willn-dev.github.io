@@ -6,6 +6,10 @@
   font-display: swap;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 
 body{
   background-color: rgb(37, 35, 35);
@@ -189,7 +193,7 @@ ul{
 
 @media(max-width:1244px){
   .mainView h2{
-    font-size: clamp(0.5rem, 1.25rem, 5rem);
+    font-size: clamp(0.5rem, 1rem, 5rem);
   }
 
   .updates{
@@ -215,12 +219,14 @@ ul{
   align-items: center;
   border: 2px solid white;
 
+  width: 200px;
+
 }
 
 nav a{
-  display: inline-block;
-  width: 200px;
+  display: block;
   padding: 10px;
+  box-sizing: border-box;
 
 }
 
@@ -233,12 +239,14 @@ nav a{
   .site-constrain{
     width: 97%;
   }
-
-  nav a{
-   display: inline-block;
-   width: 120px;
-   padding: 4px;
+  .container-vertical-ul{
+    width: 110px;
   }
+
+  .container-horizontal{
+    gap: 0.5rem;
+  }
+
 }
 
 @media (min-width:1244px) { /*DESKTOP*/
