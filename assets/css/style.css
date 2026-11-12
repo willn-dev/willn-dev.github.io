@@ -172,7 +172,7 @@ ul{
 
 .site-info ul,
 .site-info p {
-  font-size: clamp(1.1rem, 1.75vw, 4rem);
+  font-size: clamp(1.1rem, 1.75vw, 8rem);
 }
 
 
