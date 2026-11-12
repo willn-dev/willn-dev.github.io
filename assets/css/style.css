@@ -10,12 +10,12 @@
 body{
   background-color: rgb(37, 35, 35);
   color:rgb(215, 247, 250);
-  font-size: small;
 }
 
 .container-horizontal{
   display: flex;
   justify-content: center;
+  align-items: center;
   gap: 10vw;
 }
 
@@ -75,14 +75,6 @@ header{
   padding: 16px;
 }
 
-@media (min-width:1244px) {
-  header{
-    flex-direction: row;
-    padding-left: 4vw;
-    
-  }
-}
-
 @media (max-width: 1244px){
   .spacer-1 {
     font-family: 'RobotoMono' monospace;
@@ -110,7 +102,17 @@ ul{
   text-align: center;
 }
 
+.back-arrow,
+.spacer,
+.container-horizontal h1 {
+    flex: 1;
+}
 
+.back-arrow{
+  font-size: 3rem;
+  text-align: left;
+  margin-left: 1vw;
+}
 
 
 .spacer-1{
@@ -158,6 +160,33 @@ ul{
   padding-top: 7vw;
 }
 
+.site-info{
+  display: flex;
+  flex-direction: row;
+  gap: 3rem;
+
+  margin-left: 7vw;
+  margin-right: 7vw;
+
+}
+
+.site-info ul,
+.site-info p {
+  font-size: clamp(1.1rem, 1.75vw, 4rem);
+}
+
+
+.site-info section{
+  flex:1;
+}
+
+#site-desc p{
+  margin-inline: auto;
+  max-width: 30vw;
+}
+
+
+
 @media(max-width:1244px){
   .mainView h2{
     font-size: clamp(0.5rem, 1.25rem, 5rem);
@@ -166,9 +195,17 @@ ul{
   .updates{
   font-size: clamp(0.75rem, 1.5rem, 5rem);
   padding-top: 5vw;
-}
+  }
+
+  .site-info{
+    flex-direction: column;
+  }
 
 
+  #site-desc p{
+  margin-inline: auto;
+  max-width: 50vw;
+ }
 }
 
 .container-vertical-ul{
@@ -177,3 +214,29 @@ ul{
   justify-content: center;
   align-items: center;
 }
+
+.site-constrain {
+  width: 75%;
+  margin-inline: auto;
+}
+
+@media (max-width:1244px){
+  .site-constrain{
+    width: 97%;
+  }
+}
+
+@media (min-width:1244px) { /*DESKTOP*/
+  header{
+    flex-direction: row;
+    padding-left: 4vw;
+    
+  }
+
+  .container-vertical {
+  align-items: flex-center;
+  padding-left: 15vw;
+  }
+
+}
+
