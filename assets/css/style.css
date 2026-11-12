@@ -213,6 +213,15 @@ ul{
   flex-direction: column; 
   justify-content: center;
   align-items: center;
+  border: 2px solid white;
+
+}
+
+nav a{
+  display: inline-block;
+  width: 175px;
+  padding: 10px;
+
 }
 
 .site-constrain {
@@ -223,6 +232,12 @@ ul{
 @media (max-width:1244px){
   .site-constrain{
     width: 97%;
+  }
+
+  nav a{
+   display: inline-block;
+   width: 160px;
+   padding: 10px;
   }
 }
 
