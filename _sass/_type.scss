@@ -51,6 +51,7 @@ hr {
   margin: var(--spacer-2) 0;
   border: 0;
   border-top: 1px solid var(--border-color);
+  padding-bottom: 1rem;
 }
 
 abbr {
@@ -112,4 +113,40 @@ a[href^="#fnref:"] {
 .lead {
   font-size: 1.25rem;
   font-weight: 300;
+}
+
+
+// Project article typography
+
+.project-content {
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    h2 {
+        font-size: 1.75rem;
+    }
+
+    h3 {
+        font-size: 1.35rem;
+    }
+
+    h4 {
+        font-size: 1.1rem;
+    }
+}
+
+
+.title-header {
+    h1 {
+        font-size: 4rem;
+        margin-bottom: 3rem;
+    }
+}
+
+@media (max-width: 1000px) {
+  .title-header h1{
+        font-size: 3.5rem;
+        margin-bottom: 3rem;
+     }
 }
